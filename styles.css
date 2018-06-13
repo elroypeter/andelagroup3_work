@@ -1,0 +1,260 @@
+*{
+	list-style: none;
+	text-decoration: none;
+}
+
+
+header{
+	width: 100%;
+	background-color: #fff;
+	height: 100px;
+	border-bottom: 2px solid #AD8FD9;
+	position: sticky;
+}
+
+header .header-brand{
+	text-transform: uppercase;
+	line-height: 20px;
+	margin: 0 auto;
+	font-weight: 900;
+	text-align: center;
+	display: block;
+	color: #222;
+	padding: 20px 0;
+}
+
+header nav ul{
+	width: fit-content;
+	display: block;
+	margin: 0 auto;
+	padding-left: 0px;
+}
+
+header nav ul li{
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding-right: 10px;
+	
+}
+
+
+header nav ul .active{
+	border-top: 2px solid red;
+}
+	header nav ul li:hover ul{
+	display: block !important;	
+}
+
+header nav ul li ul{
+	position: absolute;
+	background-color: #fff;
+	padding: 0px 30px 0px 5px;
+	border: 1px solid #f3f3f3;
+	border-radius: 4px 4px 4px 4px; 
+	display: none;
+}
+
+
+
+header nav ul li ul li{
+	width: 100px;
+	padding: 10px 0px;
+	
+}
+
+header nav ul li ul li a:hover{
+	background-color: #f3f3f3;
+	padding: 0px 0px 0px 10px;
+	
+}
+
+header nav ul li a{
+	font-family: arial;
+	font-size: 14px;
+	color: #222;
+	text-transform: uppercase;
+}
+
+
+header .header-cases{
+	display: none;
+}
+
+@media only screen and (min-width: 1000px){
+
+	header .header-brand{
+		margin: 30px;
+		float: left;
+		line-height: 20px;
+		border-right: 3px solid #222;
+		padding: 20px 20px; 
+}
+	header nav ul{
+	margin-top: 10px ;
+	float: left;
+	line-height: 100px;
+}
+	header nav ul li ul{
+	margin-top: 0px !important;
+	line-height: 10px !important;
+	border: 1px solid #AD8FD9;
+}
+	
+	header .header-cases{
+		display: block;
+		font-family: arial;
+		font-size: 14px;
+		color: #222;
+		text-transform: uppercase;
+		border: 2px solid green;
+		border-radius: 20px;
+		float: right;
+		margin-right: 30px;
+		padding: 0px 20px;
+		line-height: 38px;
+		margin-top: 31px;
+	}
+}  
+
+	.index-banner{
+		width: 100%;
+		height: calc(100vh - 120px);
+		background-image: url('IMG_4247.JPG');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: table;
+	}
+
+.index-banner h2{
+	font-family: arial;
+	color: #fff;
+	font-size: 60px;
+	font-weight: 900;
+	text-shadow: 2px 2px 8px #111;
+	text-align:center;
+}
+ .index-banner h1{
+ 	font-family: arial;
+ 	font-size: 14px;
+ 	font-style: italic;
+ 	color: #222;
+ 	text-align: center;
+ }
+
+.vertical-center{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.index-boxlink  div {
+	width: calc(100% - 10px);
+	background-color: #f3f3f3;
+	height: 100px;
+	margin: 10px;
+	display: block;
+}
+
+.index-boxlink  div h3{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 20px;
+	text-align: center;
+	line-height: 100px;
+	color:#111;
+	
+}
+.index-boxlink  div h4{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 25px;
+	text-align: center;
+	line-height: 100px;
+	color:#111;
+	
+}
+
+@media only screen and (min-width: 1000px){
+	.index-banner{
+		height:450px;
+	}
+	.wrapper{
+		width: 1000px;
+		margin: 0 auto;
+	} 
+	.index-boxlink  div h3{
+		line-height: 180px;
+	
+}
+
+		.index-boxlink{
+			height: 300px;
+			overflow: auto;
+	}
+	.index-boxlink  div {
+	float: left;
+	margin: 10px 10px 0px;
+	height: 200px;  
+}
+	.index-boxlinksquare{
+			width: calc(25% - 20px) !important;
+		}
+	.index-boxlinkrectangle{
+		width: calc(50% - 20px) !important;
+	}
+
+}
+
+footer{
+	width: calc(100% - 80px);
+	margin-top: 10px;
+	background-color: #595650;
+	padding: 40px 40px;
+	overflow: hidden;
+}
+ footer ul li a {
+ 	color: #fff;
+ 	font-family: arial;
+ 	line-height: 30px;
+ 	font-size: 16px;
+ }
+  footer ul li {
+ 	display: block;
+ }
+
+ footer ul {
+ 	width: fit-content;
+ 	padding-left: 10px;
+ 	float: left;
+ }
+  .footer-menu-invisible {
+  	display: none;
+  }
+ 
+  .footer-social-links{
+  	margin-top: 30px;
+  	width: 80px;
+  	float: right;
+  }
+
+  .footer-social-links img{
+  	width: 100%;
+  	margin-bottom: 20px;
+  }
+  @media only screen and (min-width: 1000px){
+   		.footer-menu-invisible {
+  	display: block;
+  }	
+   .footer-menu-invisible li{
+  	color: #fff;
+  	font-family: arial;
+  	line-height: 30px;
+  }
+
+   footer ul {
+ 	padding-right: 30px;
+ 	margin-top: 40px;
+ }
+  }
